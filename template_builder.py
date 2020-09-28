@@ -39,13 +39,13 @@ sepmac_template_data = [
         'phone_label': 'Library'
     },
     {
-        'mac_address': '00425ac6268b',
+        'mac_address': 'ac7e8a2bf1c1',
         'base_extension': 103,
         'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
         'phone_label': 'Upstairs Bedroom'
     },
     {
-        'mac_address': '00425ac6268b',
+        'mac_address': 'ac7e8a2bf1bd',
         'base_extension': 104,
         'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
         'phone_label': 'Den'
