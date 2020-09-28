@@ -10,7 +10,7 @@ dndbusy=yes
 huntgroup_default=no
 busylevel=4
 call-limit=5
-register={{ base_extension + second_extension_add }},{{ intercom_extension }}
+register={{ base_extension + second_extension_add }},{{ base_extension + intercom_extension_add }}
 
 [{{ base_extension + second_extension_add }}](+)
 transport=tcp
