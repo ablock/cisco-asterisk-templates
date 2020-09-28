@@ -2,8 +2,9 @@ from jinja2 import FileSystemLoader, Environment
 import uuid
 
 ASTERISK_SERVER_IP = '192.168.19.202'
+BASE_EXTENSION = 100
 SECOND_EXTENSION_NUMBER_JUMP = 10
-INTERCOM_EXTENSION = 400
+INTERCOM_EXTENSION_NUMBER_JUMP = 300
 
 templateLoader = FileSystemLoader(searchpath='./templates')
 templateEnv = Environment(loader=templateLoader)
@@ -13,7 +14,7 @@ template = templateEnv.get_template(sip_template)
 
 sip_template_data = {
     'second_extension_add': SECOND_EXTENSION_NUMBER_JUMP,
-    'intercom_extension': INTERCOM_EXTENSION,
+    'intercom_extension_add': INTERCOM_EXTENSION_NUMBER_JUMP,
     'base_extensions': [ 101, 102, 103, 104, 105, 106, 107 ]
 }
 outputText = template.render(sip_template_data)  # this is where to put args to the template renderer
@@ -36,6 +37,18 @@ sepmac_template_data = [
         'base_extension': 102,
         'base_extension_secret': '2txddXTGJtTwFei4bokoGYsz3UsE',
         'phone_label': 'Library'
+    },
+    {
+        'mac_address': '00425ac6268b',
+        'base_extension': 103,
+        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'phone_label': 'Upstairs Bedroom'
+    },
+    {
+        'mac_address': '00425ac6268b',
+        'base_extension': 104,
+        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'phone_label': 'Den'
     }
 ]
 
@@ -43,7 +56,7 @@ for dataset in sepmac_template_data:
     dataset['guid'] = uuid.uuid1()
     dataset['server_ip'] = ASTERISK_SERVER_IP
     dataset['second_extension'] = dataset['base_extension'] + SECOND_EXTENSION_NUMBER_JUMP
-    dataset['intercom_extension'] = INTERCOM_EXTENSION
+    dataset['intercom_extension'] = dataset['base_extension'] + INTERCOM_EXTENSION_NUMBER_JUMP
     outputText = template.render(dataset)  # this is where to put args to the template renderer
 
     filename = 'SEP' + dataset['mac_address'].upper() + '.cnf.xml'

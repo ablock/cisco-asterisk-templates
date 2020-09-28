@@ -23,9 +23,8 @@ dndbusy=yes
 huntgroup_default=no
 busylevel=4
 call-limit=5
-{% endfor %}
 
-[{{ intercom_extension }}](+)
+[{{ base_extension + intercom_extension_add }}](+)
 transport=tcp
 cisco_usecallmanager=yes
 cisco_pickupnotify_alert=from,to
@@ -36,3 +35,4 @@ dndbusy=yes
 huntgroup_default=no
 busylevel=4
 call-limit=5
+{% endfor %}
