@@ -1,5 +1,4 @@
-{% for base_extension in base_extensions %}
-[{{ base_extension }}](+)
+[cisco]
 transport=tcp
 cisco_usecallmanager=yes
 cisco_pickupnotify_alert=from,to
@@ -10,29 +9,11 @@ dndbusy=yes
 huntgroup_default=no
 busylevel=4
 call-limit=5
+
+[{{ base_extension }}](+,cisco)
 register={{ base_extension + second_extension_add }},{{ base_extension + intercom_extension_add }}
 
-[{{ base_extension + second_extension_add }}](+)
-transport=tcp
-cisco_usecallmanager=yes
-cisco_pickupnotify_alert=from,to
-cisco_pickupnotify_timer=5
-cisco_keep_conference=no
-cisco_multiadmin_conference=yes
-dndbusy=yes
-huntgroup_default=no
-busylevel=4
-call-limit=5
+[{{ base_extension + second_extension_add }}](+,cisco)
 
-[{{ base_extension + intercom_extension_add }}](+)
-transport=tcp
-cisco_usecallmanager=yes
-cisco_pickupnotify_alert=from,to
-cisco_pickupnotify_timer=5
-cisco_keep_conference=no
-cisco_multiadmin_conference=yes
-dndbusy=yes
-huntgroup_default=no
-busylevel=4
-call-limit=5
+[{{ base_extension + intercom_extension_add }}](+, cisco)
 {% endfor %}
