@@ -10,10 +10,11 @@ huntgroup_default=no
 busylevel=4
 call-limit=5
 
+{% for base_extension in base_extensions %}
 [{{ base_extension }}](+,cisco)
 register={{ base_extension + second_extension_add }},{{ base_extension + intercom_extension_add }}
 
 [{{ base_extension + second_extension_add }}](+,cisco)
 
-[{{ base_extension + intercom_extension_add }}](+, cisco)
+[{{ base_extension + intercom_extension_add }}](+,cisco)
 {% endfor %}
