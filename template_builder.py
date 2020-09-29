@@ -36,19 +36,37 @@ sepmac_template_data = [
         'mac_address': '00425ac6268b',
         'base_extension': 102,
         'base_extension_secret': '2txddXTGJtTwFei4bokoGYsz3UsE',
-        'phone_label': 'Library'
+        'phone_label': 'Upstairs bedroom'
     },
     {
         'mac_address': 'ac7e8a2bf1c1',
         'base_extension': 103,
         'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
-        'phone_label': 'Upstairs Bedroom'
+        'phone_label': 'Office'
     },
     {
         'mac_address': 'ac7e8a2bf1bd',
         'base_extension': 104,
         'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
-        'phone_label': 'Den'
+        'phone_label': 'Downstairs TV room'
+    },
+    {
+        'mac_address': '38205618b1fb',
+        'base_extension': 105,
+        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'phone_label': 'Downstairs bedroom'
+    },
+    {
+        'mac_address': '38205618b21b',
+        'base_extension': 106,
+        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'phone_label': 'Guest bedroom'
+    },
+    {
+        'mac_address': 'ac7e8a2bedc0',
+        'base_extension': 107,
+        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'phone_label': 'TBD'
     }
 ]
 
