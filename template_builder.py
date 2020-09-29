@@ -36,7 +36,7 @@ sepmac_template_data = [
         'mac_address': '00425ac6268b',
         'base_extension': 102,
         'base_extension_secret': '2txddXTGJtTwFei4bokoGYsz3UsE',
-        'phone_label': 'Upper B/R'
+        'phone_label': 'Master B/R'
     },
     {
         'mac_address': 'ac7e8a2bf1c1',
