@@ -171,11 +171,6 @@
         <featureLabel>Adam</featureLabel>
         <speedDialNumber>4158668601</speedDialNumber>
       </line>
-      <line button="6">
-        <featureID>2</featureID>
-        <featureLabel>Eve</featureLabel>
-        <speedDialNumber>4158668602</speedDialNumber>
-      </line>
     </sipLines>
     <externalNumberMask></externalNumberMask>
     <voipControlPort>5160</voipControlPort>
