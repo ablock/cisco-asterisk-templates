@@ -101,7 +101,7 @@
         <proxy>USECALLMANAGER</proxy>
         <port>5160</port>
         <name>{{ base_extension }}</name>
-        <displayName>{{ phone_label }}</displayName>
+        <displayName></displayName>
         <autoAnswer>
           <autoAnswerEnabled>0</autoAnswerEnabled>
         </autoAnswer>
@@ -130,7 +130,7 @@
         <proxy>USECALLMANAGER</proxy>
         <port>5160</port>
         <name>{{ second_extension }}</name>
-        <displayName>{{ phone_label }}</displayName>
+        <displayName></displayName>
         <autoAnswer>
           <autoAnswerEnabled>0</autoAnswerEnabled>
         </autoAnswer>
