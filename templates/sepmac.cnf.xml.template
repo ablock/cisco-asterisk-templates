@@ -222,7 +222,7 @@
     <kemOneColumn>0</kemOneColumn>
     <lineMode>0</lineMode>
     <allCallsOnPrimary>0</allCallsOnPrimary>
-    <softKeyControl>0</softKeyControl>
+    <softKeyControl>1</softKeyControl>
     <settingsAccess>1</settingsAccess>
     <webProtocol>0</webProtocol>
     <webAccess>0</webAccess>
