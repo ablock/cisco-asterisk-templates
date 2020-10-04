@@ -76,6 +76,7 @@ sepmac_template_data = [
 for dataset in sepmac_template_data:
     dataset['guid'] = uuid.uuid1()
     dataset['server_ip'] = ASTERISK_SERVER_IP
+    dataset['permit_ip'] = EXTENSION_PERMIT_IP
     dataset['second_extension'] = dataset['base_extension'] + SECOND_EXTENSION_NUMBER_JUMP
     dataset['intercom_extension'] = dataset['base_extension'] + INTERCOM_EXTENSION_NUMBER_JUMP
     outputText = template.render(dataset)  # this is where to put args to the template renderer
