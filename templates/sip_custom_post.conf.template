@@ -9,6 +9,7 @@ dndbusy=yes
 huntgroup_default=no
 busylevel=4
 call-limit=5
+permit={{ permit_ip }}/255.255.255.0
 
 {% for base_extension in base_extensions %}
 [{{ base_extension }}](+,cisco)

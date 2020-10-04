@@ -1,7 +1,9 @@
 from jinja2 import FileSystemLoader, Environment
 import uuid
 
-ASTERISK_SERVER_IP = '192.168.19.202'
+BASE_OCTETS = '192.168.19'
+ASTERISK_SERVER_IP = f"{BASE_OCTETS}.202"
+EXTENSION_PERMIT_IP = f"{BASE_OCTETS}.0"
 BASE_EXTENSION = 100
 SECOND_EXTENSION_NUMBER_JUMP = 10
 INTERCOM_EXTENSION_NUMBER_JUMP = 300
@@ -15,7 +17,8 @@ template = templateEnv.get_template(sip_template)
 sip_template_data = {
     'second_extension_add': SECOND_EXTENSION_NUMBER_JUMP,
     'intercom_extension_add': INTERCOM_EXTENSION_NUMBER_JUMP,
-    'base_extensions': [ 101, 102, 103, 104, 105, 106, 107 ]
+    'base_extensions': [ 101, 102, 103, 104, 105, 106, 107 ],
+    'permit_ip': EXTENSION_PERMIT_IP
 }
 outputText = template.render(sip_template_data)  # this is where to put args to the template renderer
 
