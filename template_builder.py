@@ -47,25 +47,25 @@ sepmac_template_data = [
     {
         'mac_address': 'ac7e8a2bf1bd',
         'base_extension': 104,
-        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'base_extension_secret': 'a79360e7d58575262508ab5a86282108',
         'phone_label': 'Lower TV'
     },
     {
         'mac_address': '38205618b1fb',
         'base_extension': 105,
-        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'base_extension_secret': '13aa4d2180ab9e8c1af2756c7169152d',
         'phone_label': 'Lower B/R'
     },
     {
         'mac_address': '38205618b21b',
         'base_extension': 106,
-        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'base_extension_secret': '004d89ac8b08585c43ccc37b17cc320b',
         'phone_label': 'Guest B/R'
     },
     {
         'mac_address': 'ac7e8a2bedc0',
         'base_extension': 107,
-        'base_extension_secret': 'JzmqC2y6XnDHBAaoDXxHfVWvnbT7sT',
+        'base_extension_secret': 'e89f169dbe7ffe40c6e066cb82e7ba6b',
         'phone_label': 'TBD'
     }
 ]
