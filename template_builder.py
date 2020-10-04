@@ -1,7 +1,9 @@
 from jinja2 import FileSystemLoader, Environment
 import uuid
 
-ASTERISK_SERVER_IP = '192.168.19.202'
+BASE_OCTETS = '192.168.19'
+ASTERISK_SERVER_IP = f"{BASE_OCTETS}.202"
+EXTENSION_PERMIT_IP = f"{BASE_OCTETS}.0"
 BASE_EXTENSION = 100
 SECOND_EXTENSION_NUMBER_JUMP = 10
 INTERCOM_EXTENSION_NUMBER_JUMP = 300
@@ -73,6 +75,7 @@ sepmac_template_data = [
 for dataset in sepmac_template_data:
     dataset['guid'] = uuid.uuid1()
     dataset['server_ip'] = ASTERISK_SERVER_IP
+    dataset['permit_ip'] = EXTENSION_PERMIT_IP
     dataset['second_extension'] = dataset['base_extension'] + SECOND_EXTENSION_NUMBER_JUMP
     dataset['intercom_extension'] = dataset['base_extension'] + INTERCOM_EXTENSION_NUMBER_JUMP
     outputText = template.render(dataset)  # this is where to put args to the template renderer
