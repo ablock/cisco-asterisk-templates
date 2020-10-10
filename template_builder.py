@@ -1,7 +1,7 @@
 from jinja2 import FileSystemLoader, Environment
 import uuid
 
-BASE_OCTETS = '192.168.19'
+BASE_OCTETS = '192.168.1'
 ASTERISK_SERVER_IP = f"{BASE_OCTETS}.202"
 EXTENSION_PERMIT_IP = f"{BASE_OCTETS}.0"
 BASE_EXTENSION = 100
