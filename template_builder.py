@@ -69,7 +69,7 @@ sepmac_template_data = [
         'mac_address': 'ac7e8a2bedc0',
         'base_extension': 107,
         'base_extension_secret': 'e89f169dbe7ffe40c6e066cb82e7ba6b',
-        'phone_label': 'TBD'
+        'phone_label': 'Garage'
     }
 ]
 
