@@ -17,7 +17,7 @@ template = templateEnv.get_template(sip_template)
 sip_template_data = {
     'second_extension_add': SECOND_EXTENSION_NUMBER_JUMP,
     'intercom_extension_add': INTERCOM_EXTENSION_NUMBER_JUMP,
-    'base_extensions': [ 101, 102, 103, 104, 105, 106, 107 ],
+    'base_extensions': [ 101, 102, 103, 104, 105, 106, 107, 108 ],
     'permit_ip': EXTENSION_PERMIT_IP
 }
 outputText = template.render(sip_template_data)  # this is where to put args to the template renderer
@@ -70,6 +70,12 @@ sepmac_template_data = [
         'base_extension': 107,
         'base_extension_secret': 'e89f169dbe7ffe40c6e066cb82e7ba6b',
         'phone_label': 'Garage'
+    },
+    {
+        'mac_address': 'ac7e8a2bedb2',
+        'base_extension': 108,
+        'base_extension_secret': 'e85d12e085ccda875def504757e66ea1',
+        'phone_label': 'Media room'
     }
 ]
 
