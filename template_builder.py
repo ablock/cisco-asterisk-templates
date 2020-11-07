@@ -75,7 +75,7 @@ sepmac_template_data = [
         'mac_address': 'ac7e8a2bedb2',
         'base_extension': 108,
         'base_extension_secret': 'e85d12e085ccda875def504757e66ea1',
-        'phone_label': 'Media room'
+        'phone_label': 'Library'
     }
 ]
 
